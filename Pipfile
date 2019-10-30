@@ -4,12 +4,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+flake8 = "*"
+autopep8 = "*"
 
 [packages]
 flask = "*"
 python-dotenv = "*"
-flake8 = "*"
-autopep8 = "*"
+elasticsearch = "<7.0.0,>=6.0.0"
 
 [requires]
 python_version = "3.6"
