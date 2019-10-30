@@ -7,6 +7,7 @@ verify_ssl = true
 flake8 = "*"
 autopep8 = "*"
 rope = "*"
+pycodestyle = "*"
 
 [packages]
 flask = "*"
@@ -18,3 +19,5 @@ python_version = "3.6"
 
 [scripts]
 serve = "flask run"
+lint = "pycodestyle -v app.py"
+lint_fix = "autopep8 -iv app.py"
