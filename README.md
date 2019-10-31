@@ -1,6 +1,6 @@
 # Inria Digital Accessibility MOOC API
 
-This web application handles Inria MOOC Accessibility web player events. Its main purpose is to act as a gateway between the web client and the [ElasticSearch](https://www.elastic.co/products/elasticsearch) server.
+This web application handles Inria MOOC Accessibility web player events. Its main purpose is to act as a gateway between the web client and an [ElasticSearch](https://www.elastic.co/products/elasticsearch) server.
 
 ## Requirements
 
@@ -21,9 +21,9 @@ You should install additional packages for development purpose.
 pipenv install --dev
 ```
 
-ElasticSearch is required in order to save records. The application will run if no ElasticSearch server can be found, but it will simply output errors.
+The application assumes ElasticSearch is used to save records. If no ElasticSearch server can be found, it will just output errors and return `500` errors.
 
-Simplest installation requires Docker. Just `cd` into the application directory and run `docker-compose up`.
+Most straightforward installation requires Docker. Just `cd` into the application directory and run `docker-compose up`.
 This will start an ElasticSearch server (on `localhost:9200`) and a Kibana instance (on `localhost:5601`) to visualize events.
 
 ### Linting
