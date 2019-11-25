@@ -57,4 +57,4 @@ Logs are written to `STDERR` and `STDOUT`. This can be overridden by configuring
 
 ### Environment Variables
 
-The .env file hosts a few variables you may need to change before running the application.
+The `.env` file hosts a few variables you may need to change before running the application.
